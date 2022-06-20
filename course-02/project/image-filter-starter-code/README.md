@@ -33,6 +33,11 @@ Follow the process described in the course to `eb init` a new application and `e
 
 ## Stand Out (Optional)
 
+## Elastic Beanstalk Endpoint URL
+- [http://myelastic100beanstalk-env.eba-8jaguhgp.us-east-1.elasticbeanstalk.com](http://myelastic100beanstalk-env.eba-8jaguhgp.us-east-1.elasticbeanstalk.com)
+- /filteredimage?image_url={image_url}
+- e.g. http://myelastic100beanstalk-env.eba-8jaguhgp.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/w_596,c_limit,q_auto:best,f_auto/fc/3034007-inline-i-applelogo.jpg
+
 ### Refactor the course RESTapi
 
 If you're feeling up to it, refactor the course RESTapi to make a request to your newly provisioned image server.
