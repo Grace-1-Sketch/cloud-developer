@@ -1,11 +1,11 @@
-import express from 'express';
+import express, {Express, Request, Response} from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
 (async () => {
 
   // Init the Express application
-  const app = express();
+  const app: Express = express();
 
   // Set the network port
   const port = process.env.PORT || 8082;
@@ -29,7 +29,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   /**************************************************************************** */
 
-  app.get( "/filteredimage", async ( req, res ) => {
+  app.get( "/filteredimage", async (req: Request, res: Response) => {
     let imageURL: string =  req.query.image_url;
     // 1. valdating the image_url
     if (!imageURL) {
